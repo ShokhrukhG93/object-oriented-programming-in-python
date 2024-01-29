@@ -20,9 +20,9 @@ class Fraction:
     def add(self,other):
         if isinstance(other,int):
             other = Fraction(other)
-        return Fraction(self.nr * other.dr + other.nr * self.dr, self.dr * other.dr)
+        return Fraction(self.nr*other.dr + other.nr*self.dr, self.dr*other.dr)
 
-       
+
 f1 = Fraction(2,3)
 f1.show()
 f2 = Fraction(2,-3)

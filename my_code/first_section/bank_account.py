@@ -1,5 +1,5 @@
 class BankAccount:
-    def set_details(self, name, balance=0):
+    def __init__(self, name, balance=0):
         self.name = name
         self.balance = balance
 
@@ -14,11 +14,8 @@ class BankAccount:
 
 
 if __name__ == "__main__":
-    a1 = BankAccount()
-    a1.set_details("Mike", 200)
-
-    a2 = BankAccount()
-    a2.set_details("Tom")
+    a1 = BankAccount("Mike", 200)
+    a2 = BankAccount("Tom")
 
     a1.display()
     a2.display()
